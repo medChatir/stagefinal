@@ -1,0 +1,33 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Modèles ML (si trop gros)
+backend-traffic-analyzer/model/*.h5
+backend-traffic-analyzer/model/*.pkl
+
+# Node modules
+node_modules/
+
+# Environnement
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
