@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python
 venv/
 __pycache__/
@@ -31,3 +32,8 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+=======
+backend-traffic-analyzer/venv/ 
+__pycache__/ 
+*.pyc 
+>>>>>>> 4740a354d6cf4a943b30b285e72bbb62729cee03

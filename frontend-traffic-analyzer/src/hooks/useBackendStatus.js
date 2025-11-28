@@ -1,6 +1,6 @@
 // hooks/useBackendStatus.js
 import { useState, useEffect, useRef } from 'react';
-import { getHealth } from '../Api/api';
+import { getHealth } from '../api/api';
 
 export default function useBackendStatus(pollInterval = 30000) {
   const [status, setStatus] = useState('checking'); // 'checking' | 'online' | 'offline'

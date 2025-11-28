@@ -1,0 +1,294 @@
+2025-08-25 21:08:02,048 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.110:5000
+2025-08-25 21:08:02,049 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-25 21:08:07,058 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:07] "[33mGET / HTTP/1.1[0m" 404 -
+2025-08-25 21:08:11,636 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:11,636 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:11] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:11,652 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:11] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:11,897 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:11] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:11,977 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:11,980 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:11] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:17,272 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:17,274 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:17] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:17,578 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:17] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:17,581 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:17,581 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:17] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:17,883 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:17] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:18,574 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:18,574 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:18] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:18,574 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:18] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:18,880 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:18,880 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:18] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:18,880 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:18] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:19,118 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:19,129 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:19,131 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:19,196 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:19,197 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:19,198 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:19,429 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:19,429 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:19,429 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:19,429 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:19,437 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:19,439 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:19,918 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:19,918 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:19,918 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:19,918 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:19] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:20,296 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:20,297 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:20] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:20,465 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:20,465 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:20] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:20,466 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:20] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:20,481 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:20] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:20,652 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:20,653 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:20] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:20,658 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+    "timestamp": datetime.now().isoformat(),
+NameError: name 'datetime' is not defined
+2025-08-25 21:08:20,662 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:20] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:08:20,779 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:20] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:08:20,779 - INFO - 127.0.0.1 - - [25/Aug/2025 21:08:20] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:09:58,909 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+NameError: name 'datetime' is not defined
+2025-08-25 21:09:58,909 - INFO - 127.0.0.1 - - [25/Aug/2025 21:09:58] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:09:58,924 - INFO - 127.0.0.1 - - [25/Aug/2025 21:09:58] "[35m[1mGET /health HTTP/1.1[0m" 500 -
+2025-08-25 21:09:59,170 - INFO - 127.0.0.1 - - [25/Aug/2025 21:09:59] "GET /stats HTTP/1.1" 200 -
+2025-08-25 21:09:59,234 - ERROR - Exception on /health [GET]
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\venv\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\PC\Desktop\Stage\backend-traffic-analyzer\app.py", line 329, in health_check
+NameError: name 'datetime' is not defined
+2025-08-25 21:09:59,234 - INFO - 127.0.0.1 - - [25/Aug/2025 21:09:59] "[35m[1mGET /health HTTP/1.1[0m" 500 -
